@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from otel_config import configure_instrumentation, instrument_fastapi_app
+from .otel_config import configure_instrumentation, instrument_fastapi_app
 
 # Configure OpenTelemetry instrumentation
 configure_instrumentation()

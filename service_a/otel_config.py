@@ -40,7 +40,10 @@ def configure_instrumentation():
     """
     Configures OpenTelemetry instrumentation for requests and FastAPI.
     """
-    tempo_endpoint = os.getenv('TEMPO_ENDPOINT', 'http://localhost:4317')
+    # tempo_endpoint = os.getenv('TEMPO_ENDPOINT', 'http://localhost:4317')
+    # tempo_endpoint = os.getenv('TEMPO_ENDPOINT', 'http://tempo-query-frontend.fastapi.svc.cluster.local:3100')
+    tempo_endpoint = os.getenv('TEMPO_ENDPOINT', 'http://tempo.fastapi.svc.cluster.local:4317')
+
     provider = OTLPProvider("service_a", tempo_endpoint)
     trace.set_tracer_provider(provider.provider)
 
