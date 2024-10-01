@@ -40,10 +40,11 @@ def configure_instrumentation():
     """
     Configures OpenTelemetry instrumentation for requests and FastAPI.
     """
-    # tempo_endpoint = os.getenv('TEMPO_ENDPOINT', 'http://localhost:4317')
-    # tempo_endpoint = os.getenv('TEMPO_ENDPOINT', 'http://tempo-query-frontend.fastapi.svc.cluster.local:3100')
-    tempo_endpoint = os.getenv('TEMPO_ENDPOINT', 'http://tempo.fastapi.svc.cluster.local:4317')
-    provider = OTLPProvider("service_b", tempo_endpoint)
+    tempo_endpoint = os.getenv('TEMPO_ENDPOINT')
+    if not tempo_endpoint:
+        raise ValueError("TEMPO_ENDPOINT environment variable is not set")
+    service_name = os.getenv('SERVICE_NAME', 'service_b')
+    provider = OTLPProvider(service_name, tempo_endpoint)
     trace.set_tracer_provider(provider.provider)
 
 # Instrument HTTP requests, HTTPX client, and Kafka to enable tracing

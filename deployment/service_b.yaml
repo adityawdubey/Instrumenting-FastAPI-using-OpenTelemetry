@@ -18,11 +18,13 @@ spec:
       containers:
       - name: service-b
         image: aniketdubey/service_b:latest
+        env:
+        - name: TEMPO_ENDPOINT
+          value: "http://tempo.fastapi.svc.cluster.local:4317"
+        - name: SERVICE_NAME
+          value: "service-b"
         ports:
         - containerPort: 8001
-        # env:
-        # - name: TEMPO_ENDPOINT
-        #   value: "http://otel-collector.fast-api.svc.cluster.local:4317"
 
 ---
 apiVersion: v1
