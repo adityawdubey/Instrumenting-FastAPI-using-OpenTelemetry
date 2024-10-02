@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: service-b
-        image: aniketdubey/service_b:latest
+        image: adityadubey/service_b:latest
         env:
         - name: TEMPO_ENDPOINT
           value: "http://tempo.fastapi.svc.cluster.local:4317"
