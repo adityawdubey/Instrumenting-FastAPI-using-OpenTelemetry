@@ -2,7 +2,7 @@
 
 This project demonstrates how to instrument FastAPI applications using OpenTelemetry and visualize the traces using **Grafana** and **Tempo**. This setup helps you monitor, trace, and analyze the performance of FastAPI-based microservices and pinpoint bottlenecks or issues across distributed systems.
 
-![alt text](<Blank diagram (7) copy.png>)
+![Blank diagram (7) copy](https://github.com/user-attachments/assets/3edd12cb-c763-4d98-ba3a-f3e53d22a569)
 
 # Table of Contents
 
@@ -135,19 +135,19 @@ With Grafana running, it’s time to integrate Tempo to visualize the traces col
     
 6. Save the configuration.
 
-    ![alt text](<Screenshot 2024-10-02 at 12.24.42 AM.png>)
+    <img width="1439" alt="Screenshot 2024-10-02 at 12 24 42 AM (1)" src="https://github.com/user-attachments/assets/8528f9e1-727b-406c-a2b8-cef6fbb79ea9">
 
 ## Usage
 
-## ⁠⁠Open `service_a` docs and send req to service b
+### ⁠⁠Open `service_a` docs and send req to `service b`
 
-![alt text](<Screenshot 2024-10-02 at 12.56.47 PM.jpg>)
+![Screenshot 2024-10-02 at 12 56 47 PM](https://github.com/user-attachments/assets/7139b5d7-444d-486a-a670-2f6df4c3925f)
 
-## Check tempo explore
+### Check tempo explore
 
 Once Tempo is integrated, you can explore your trace data in Grafana using the **Explore** tab. Traces from **Service A** to **Service B** will be displayed.
 
-![alt text](<Screenshot 2024-10-02 at 12.24.22 AM.png>)
+<img width="1440" alt="Screenshot 2024-10-02 at 12 24 22 AM" src="https://github.com/user-attachments/assets/cd385394-2368-4eab-a304-4860e4305ffe">
 
 ## Contributing
 Contributions are welcome! Feel free to submit a pull request or open an issue to improve the project.
