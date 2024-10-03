@@ -19,7 +19,7 @@ This project demonstrates how to instrument FastAPI applications using OpenTelem
 4. [Usage](#usage)
    - [Open `service_a` docs and send req to `service b`](#⁠⁠open-service_a-docs-and-send-req-to-service-b)
    - [Check Tempo explore](#check-tempo-explore)
-5. [Contributing](#contributing)
+5. [Contributing](#contributing) 
 
 # Overview
 
