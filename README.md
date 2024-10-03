@@ -1,6 +1,8 @@
 # Instrumenting-FastAPI-using-OpenTelemetry
 
-This project demonstrates how to instrument FastAPI applications using OpenTelemetry and visualize the traces using Grafana and Tempo. This setup helps you monitor, trace, and analyze the performance of FastAPI-based microservices and pinpoint bottlenecks or issues across distributed systems.
+This project demonstrates how to instrument FastAPI applications using OpenTelemetry and visualize the traces using **Grafana** and **Tempo**. This setup helps you monitor, trace, and analyze the performance of FastAPI-based microservices and pinpoint bottlenecks or issues across distributed systems.
+
+![alt text](<Blank diagram (7) copy.png>)
 
 # Table of Contents
 
