@@ -23,5 +23,4 @@ COPY --from=builder /usr/src/app/service_a ./service_a
 
 EXPOSE 8000
 
-# Run app.py when the container launches
 CMD ["uvicorn", "service_a.main:app", "--host", "0.0.0.0", "--port", "8000"]
