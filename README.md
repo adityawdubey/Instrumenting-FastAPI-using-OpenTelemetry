@@ -15,7 +15,7 @@ This project demonstrates how to instrument FastAPI applications using OpenTelem
      - [Port forward to access services](#-port-forward-to-access-services)
      - [Add Tempo data source](#-add-tempo-data-source)
 4. [Usage](#usage)
-   - [Open `service_a` docs and send req to service b](#⁠⁠open-service_a-docs-and-send-req-to-service-b)
+   - [Open `service_a` docs and send req to `service b`](#⁠⁠open-service_a-docs-and-send-req-to-service-b)
    - [Check Tempo explore](#check-tempo-explore)
 5. [Contributing](#contributing)
 
